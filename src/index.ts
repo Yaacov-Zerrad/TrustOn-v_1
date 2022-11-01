@@ -1,21 +1,25 @@
-import { OnRpcRequestHandler } from '@metamask/snap-types';
+import { OnTransactionHandler } from '@metamask/snap-types';
 
-export const onRpcRequest: OnRpcRequestHandler = ({ origin, request }) => {
-  switch (request.method) {
-    case 'hello':
-      return wallet.request({
-        method: 'snap_confirm',
-        params: [
-          {
-            prompt: `Hello, ${origin}!`,
-            description:
-              'This custom confirmation is just for display purposes.',
-            textAreaContent:
-              'But you can edit the snap source code to make it do something, if you want to!',
-          },
-        ],
-      });
-    default:
-      throw new Error('Method not found.');
-  }
+
+
+export const onTransaction: OnTransactionHandler = async ({ transaction, chainId, }) => {
+  /*  
+  The problem is to call an external API and return the value in the { status } variable
+  To call the API with the address of the smart contract, you can use: url + { tansaction.to }
+  */
+
+
+  let status = "To change..."
+
+  // Object returner has Metamask and display in TRUSTON tab
+  const insights = {
+    "Recognize": status,
+    "transaction to:":
+    transaction.to,
+    transaction,
+    chainId,
+  };
+  return { insights };
 };
+  
+

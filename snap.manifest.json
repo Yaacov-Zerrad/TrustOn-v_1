@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
-  "proposedName": "MetaMask TypeScript Template Snap\n",
-  "description": "An example Snap written in TypeScript.",
+  "description": "An example TrusOn.",
+  "proposedName": "TrusOn \n",
   "repository": {
     "type": "git",
     "url": "https://github.com/MetaMask/template-typescript-snap.git"
   },
   "source": {
-    "shasum": "ZW1yly4ughA3heTnFzWGUMdo0zc87pYqXw2IyqLGbTQ=",
+    "shasum": "2U+XqQqB1R7sxBQHJMeuEQyaiw2ghSUNV2MVI4/yupQ=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
@@ -18,7 +18,9 @@
     }
   },
   "initialPermissions": {
-    "snap_confirm": {}
+    "snap_confirm": {},
+    "endowment:transaction-insight": {},
+    "endowment:network-access": {}
   },
   "manifestVersion": "0.1"
 }
