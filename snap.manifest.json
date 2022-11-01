@@ -1,17 +1,17 @@
 {
   "version": "1.0.0",
   "description": "An example TrusOn.",
-  "proposedName": "TrusOn \n",
+  "proposedName": "TrustOn \n",
   "repository": {
     "type": "git",
     "url": "https://github.com/MetaMask/template-typescript-snap.git"
   },
   "source": {
-    "shasum": "2U+XqQqB1R7sxBQHJMeuEQyaiw2ghSUNV2MVI4/yupQ=",
+    "shasum": "KoPZjM9d/CdRljY65bFZqkykxy0mwauIIvLgwTcPRc8=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
-        "packageName": "template-typescript-snap",
+        "packageName": "trust-on",
         "registry": "https://registry.npmjs.org/",
         "iconPath": "images/icon.svg"
       }
